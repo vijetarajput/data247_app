@@ -106,12 +106,14 @@ Students and freshers in India currently struggle with:
 
 ## 🗓️ Development Timeline
 
-- May 2026 → Idea documented and app planned
-- June 2026 → Content generated and app built on Bolt.new
-- July 2026 → Beta testing with Gujarat engineering students
-- August 2026 → Launch on Google Play Store
+- Week 1 May 2026 → Idea documented, planning complete, accounts set up
+- Week 2 May 2026 → All content generated — 450 MCQ, 250 Flashcards, 125 Q&A
+- Week 3 May 2026 → App built on Bolt.new and deployed on Vercel
+- Week 4 May 2026 → Beta launch — first 100 users from WhatsApp community
+- June 2026 → Google Play Store submission and launch
+- June 2026 → Pro plan live via Razorpay
 - End of 2026 → Target 10,000 active users
-- 2027 → Pro monetisation and Version 2.0 features
+- 2027 → Version 2.0 — ML Engineer track, automation, admin dashboard
 
 ---
 

@@ -15,16 +15,17 @@
 * DPDP Act 2023 compliance requirements reviewed and incorporated
 * Infrastructure and feature planning completed
 * Initial content generation started
+* Language strategy revised from Hinglish-first to Simple English-first approach after accessibility review for broader pan-India usability
 
-## May 2026 — Development Phase Started
+## May 2026 — MVP Development Phase
 
-* App development commenced
-* Admin panel structure created
+* Early MVP development initiated
+* Admin panel structure planned
 * WhatsApp community launched
 * LinkedIn company page created
-* Data Analyst and Data Scientist question banks uploaded
-* Morning Drill system implemented
-* Flashcards and progress tracking modules added
+* Data Analyst and Data Scientist question banks structured
+* Morning Drill workflow planned and structured
+* Flashcards and progress tracking modules defined for MVP
 
 ## Version 2.0 Planning Update
 

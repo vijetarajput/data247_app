@@ -5,84 +5,60 @@
 **Founded by:** Vijetasingh Rajput  
 **Date Started:** May 6, 2026  
 **Location:** Ahmedabad, Gujarat, India  
-**Status:** Early-stage founder-led product under active development
+**Status:** Founder-led early-stage product under active development
 
 ---
 
-## What is DATA247?
+## Overview
 
-DATA247 is an educational technology product being developed to support students and early-career professionals preparing for data and analytics roles in India.
+DATA247 is an AI-assisted learning and career readiness platform being developed for aspiring data and analytics professionals in India.
 
-The platform focuses on structured interview preparation, revision systems, skill assessment, and practical career readiness for roles such as:
+The platform focuses on structured interview preparation, guided learning workflows, revision systems, skill assessment, and practical career readiness for learners preparing for roles such as:
 
 - Data Analyst
 - Business Analyst
 - Data Scientist
-- AI and ML-related entry-level roles
+- AI and Machine Learning-related entry-level roles
 
-The goal is to simplify preparation and create a more structured and accessible learning experience for aspiring data professionals.
+The objective is to reduce preparation friction by creating a more structured, practical, and accessible learning experience for students and early-career professionals.
 
 ---
 
-## Problem Statement
+## Why DATA247?
 
-Many learners preparing for data careers currently face challenges such as:
+While exploring the data and analytics education space, one recurring issue became increasingly visible:
 
-- fragmented interview preparation resources
-- inconsistent learning structure
-- outdated question banks
+Many learners have access to information, but not necessarily access to structured preparation.
+
+Preparation journeys often become fragmented due to:
+- scattered online resources
+- inconsistent learning paths
+- outdated interview material
 - lack of practical revision systems
-- difficulty understanding technical concepts clearly as beginners
-- limited India-focused preparation workflows
+- overwhelming amounts of disconnected content
+- limited access to structured and affordable preparation ecosystems across different educational environments
 
-DATA247 is being designed to address these gaps through a mobile-first and beginner-friendly learning system.
+As a result, many learners spend significant time consuming content without developing clear preparation direction or interview confidence.
+
+DATA247 is being designed to address these gaps through a mobile-first, workflow-focused, and beginner-friendly learning system.
 
 ---
 
 ## Product Direction
 
-The platform currently focuses on the following systems:
+The platform currently focuses on the following systems and workflows:
 
 | System | Purpose |
 | :--- | :--- |
-| Morning Drill | Daily question-based consistency system |
-| MCQ Practice Bank | Structured interview preparation by topic |
-| Flashcards | Quick concept and formula revision |
-| Job Ready Quiz | Self-assessment and skill gap identification |
-| Progress Tracking | Learning visibility and consistency tracking |
-| Data & AI Updates | Industry awareness and learning support |
-| Role-Based Preparation | Structured preparation for different career tracks |
-
----
-
-## Development Approach
-
-DATA247 is currently in the MVP development phase.
-
-The repository includes:
-- product planning documents
-- feature roadmaps
-- development records
-- infrastructure planning
-- compliance preparation
-- changelog history
-- brand assets
-
-The MVP is being developed using modern AI-assisted and no-code development workflows for rapid iteration and validation.
-
----
-
-## Infrastructure Planning
-
-Current infrastructure planning includes:
-
-- Supabase
-- Firebase
-- Vercel
-- Make.com
-- AI-assisted development tooling
-
-Technology decisions may continue evolving during development.
+| Personalised Roadmaps | Guided preparation flow based on role and learning stage |
+| Morning Drill | Daily consistency and question-based practice system |
+| MCQ Practice Bank | Structured topic-wise interview preparation |
+| Flashcards | Quick revision and concept reinforcement |
+| Interview Workflows | Technical, HR, and role-focused interview preparation |
+| Job Ready Quiz | Skill assessment and preparation gap visibility |
+| Progress Tracking | Learning consistency and performance visibility |
+| Daily Tech & AI Updates | Industry awareness and continuous learning support |
+| Role-Based Preparation | Structured preparation across different analytics career tracks |
 
 ---
 
@@ -90,12 +66,62 @@ Technology decisions may continue evolving during development.
 
 DATA247 is being built around the following principles:
 
-- simple and beginner-friendly learning
-- practical interview preparation
-- structured daily consistency
+- structured and guided preparation
+- beginner-friendly learning systems
+- practical interview readiness
 - mobile-first accessibility
-- clear explanations
+- clear and simplified explanations
+- consistent revision workflows
+- affordable and scalable preparation access
 - long-term career readiness
+
+The focus is not only on delivering educational content, but on designing systems that reduce confusion and improve preparation clarity.
+
+---
+
+## Development Approach
+
+DATA247 is currently being developed as an MVP (Minimum Viable Product) using rapid iteration and AI-assisted development workflows.
+
+The repository currently includes:
+- product planning documents
+- development records
+- feature roadmaps
+- infrastructure planning
+- changelog history
+- compliance preparation
+- brand and product assets
+
+The product is being iteratively refined through workflow testing, usability decisions, and preparation-system experimentation.
+
+---
+
+## Infrastructure & Tooling
+
+Current infrastructure and tooling exploration includes:
+
+- Supabase
+- Firebase
+- Vercel
+- Make.com
+- AI-assisted development workflows
+- Automation and workflow experimentation
+
+Infrastructure decisions may continue evolving during product development and scaling.
+
+---
+
+## Current Development Focus
+
+Current areas under active refinement include:
+
+- onboarding workflows
+- preparation roadmap generation
+- structured learning progression
+- revision systems
+- practice workflow optimisation
+- mobile usability
+- lightweight user experience design
 
 ---
 
@@ -104,9 +130,19 @@ DATA247 is being built around the following principles:
 Vijetasingh Rajput  
 Ahmedabad, Gujarat, India
 
+Building systems around analytics workflows, structured learning experiences, operational thinking, and AI-assisted product ecosystems.
+
+---
+
+## Disclaimer
+
+DATA247 is currently an independently developed early-stage product under active experimentation and refinement.
+
+Features, workflows, infrastructure, and product direction may continue evolving during development and beta testing phases.
+
 ---
 
 © 2026 DATA247  
 All rights reserved.
 
-Original concept, planning, and product direction by Vijetasingh Rajput.
+Original concept, planning, product direction, and workflow architecture by Vijetasingh Rajput.

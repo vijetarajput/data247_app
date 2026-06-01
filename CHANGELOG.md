@@ -35,7 +35,7 @@
 - Full feature set live — MCQ Practice, Flashcards, Morning Drill, Salary Calculator, Learning Roadmap, Interview Guides, Job Ready Quiz, Referral System, Bookmarks
 - Play Store submission in progress
 
-## Version 2.0 Planning Update
+## Version 2.0 Planning Update — June 2026
 
 - Expanded role structure and content hierarchy planned
 - Advanced feature roadmap documented

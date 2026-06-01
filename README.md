@@ -2,9 +2,9 @@
 ## From College to Cabin
 
 **Founded by:** Vijetasingh Rajput  
-**Date Started:** May 6, 2026  
+**Date Started:** April 2026  
 **Location:** Ahmedabad, Gujarat, India  
-**Status:** Launched — May 2026
+**Status:** Launched — June 2026
 
 ---
 

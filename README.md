@@ -2,8 +2,8 @@
 
 > **Structured interview preparation and career readiness for aspiring Data Analysts and Data Scientists in India.**
 
-🌐 **Live App:** https://data247.lovable.app
-📱 **Play Store:** Coming Soon
+🌐 **Website:** https://data247.co.in
+📱 **Play Store:** https://play.google.com/store/apps/details?id=app.data247.prep
 
 ---
 
@@ -85,9 +85,9 @@ The platform is designed for:
 
 | Version | Timeline | Focus |
 |---|---|---|
-| V1.0 | June 2026 | Core platform — MCQ, Flashcards, Notes, Morning Drill |
-| V2.0 | Q3 2026 | Excel, Power BI, Statistics modules — AI-powered practice |
-| V3.0 | Q4 2026 | Mock interviews, personalised feedback, community features |
+| **V1.0** | June 2026 | Core platform — MCQ, Flashcards, Notes, Morning Drill, Interview Guides, Job Ready Quiz |
+| **V2.0** | 2027 | Pro subscription (Rs 99/month), Company Packs, new role tracks (BA, ML Engineer, Data Engineer), AI Chatbot, Mock Interview, Battle Arena |
+| **V3.0** | 2027 onwards | Campus Ambassador Programme, Enterprise Licensing, Advanced AI features |
 
 ---
 
@@ -102,7 +102,7 @@ The platform runs on secure cloud infrastructure with real-time content manageme
 - Secure cloud database — users, questions, progress, flashcards
 - Email and Google authentication
 - Founder-only admin panel for real-time content updates
-- Google Play Store distribution
+- Google Play Store distribution — package: app.data247.prep
 
 ---
 
@@ -162,6 +162,7 @@ Ahmedabad, Gujarat, India
 Building structured learning systems for data analytics career preparation in India — with a specific focus on making quality preparation accessible to learners from tier-2, tier-3 and rural backgrounds.
 
 🔗 [LinkedIn](https://www.linkedin.com/in/viijetar/)
+🌐 [Website](https://data247.co.in)
 
 ---
 

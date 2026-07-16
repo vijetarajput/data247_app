@@ -111,9 +111,7 @@ The tutor marketplace was built in direct response to user feedback — mobile a
 | Content Type | Detail |
 |---|---|
 | MCQ Questions | 720+ questions across 12 modules (6 DA + 6 DS) — 3 difficulty levels — with explanations |
-| Study Notes — SQL | 14 notes × 2 languages (English + Hinglish) = 28 PDFs |
-| Study Notes — Python | 14 notes × 2 languages = 28 PDFs |
-| Study Notes — Excel | Expanding — Note 1 available in both languages |
+| Study Notes | 48+ PDFs — SQL, Python, Excel — English and Hinglish — free download |
 | Flashcards | SQL, Python, Excel, Power BI, Statistics — DA and DS tracks |
 | Interview Guides | HR, Technical, Behavioural, Managerial — DA and DS — sample answers and tips |
 | Morning Drills | Daily 5-question sets — SQL, Excel, Python, Power BI, Statistics, ML, AI |

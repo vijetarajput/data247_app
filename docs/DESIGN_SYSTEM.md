@@ -103,6 +103,27 @@ Designed for simultaneous dual-language technical concept assimilation across bo
 +-----------------------------------------------------------------------------+
 ```
 
+### 3.3 Learner Experience & Video Review Layout (`/` Landing Page)
+
+An interactive, high-trust testimonial section on the landing page showing verified student proof, localized text reviews, and native browser video reels.
+
+```text
++-----------------------------------------------------------------------------------------+
+| LANDING PAGE: "Learner Stories & Reviews" Section                                      |
++-----------------------------------------------------------------------------------------+
+| [ "Share Your Story" Button ] ---> Opens Review Submission Modal                        |
+|                                                                                         |
+|  +---------------------------+  +---------------------------+  +---------------------+  |
+|  | VIDEO TESTIMONIAL CARD    |  | TEXT REVIEW CARD          |  | VIDEO TESTIMONIAL   |  |
+|  | [▶ Play 45s Story]        |  | ⭐⭐⭐⭐⭐                |  | [▶ Play 30s Story]  |  |
+|  | "Hinglish notes made SQL  |  | "Cracked Data Analyst     |  | "Wasm sandbox runs  |  |
+|  | window functions so easy" |  | interview in 6 weeks."    |  | without laptop lag" |  |
+|  | — Priya S., Indore        |  | — Rahul K., Patna         |  | — Ankit M., Jaipur  |  |
+|  | [Verified Learner Badge]  |  | [Verified Learner Badge]  |  | [Verified Badge]    |  |
+|  +---------------------------+  +---------------------------+  +---------------------+  |
++-----------------------------------------------------------------------------------------+
+```
+
 ---
 
 ## 4. Interaction States & Motion Guidelines

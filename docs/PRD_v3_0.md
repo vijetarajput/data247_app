@@ -96,6 +96,15 @@
 * **LinkedIn Verification:** Standardized profile verification via LinkedIn PDF parsing.
 * **Booking-Verified Reviews:** Anti-fraud protection restricting reviews exclusively to learners who completed a paid session.
 
+### 5.6 Community Proof & Learner Experience Engine (`/` Landing Page)
+
+* **Dual-Mode Submission Modal:**
+  * **Text Feedback:** Star rating (1–5), learner name, current/target role, location/tier, written experience, and optional LinkedIn profile link.
+  * **Video Testimonials:** In-browser recording via HTML5 `MediaRecorder` API or direct video upload (MP4/WebM, max 60s / 25MB) with client-side preview before submission.
+* **Consent & DPDP Act 2023 Compliance:** Explicit user opt-in checkbox granting permission to feature their feedback and video publicly on the DATA247 platform.
+* **Moderation Pipeline:** Submissions enter a `pending_review` status queue; only admin-approved reviews and video links render on the production landing page to prevent spam.
+* **Interactive Landing Page Carousel:** High-performance video reel player with autoplay previews on hover, lazy-loaded video modals, and localized Hinglish highlight quotes.
+
 ---
 
 ## 6. Programmatic SEO (pSEO) & Schema.org Specification

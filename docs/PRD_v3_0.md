@@ -1,10 +1,11 @@
 # Product Requirements Document (PRD) — v3.0 Native Engine
-**Product Name:** DATA247 (data247.co.in)  
-**Author & Product Lead:** Vijeta Singh Rajput (Founder & Product Lead | Ex-Product Lead at NEBE)  
-**Status:** Approved & Ready for Implementation  
-**Sprint Window:** October 03 – October 17, 2026 (Rapid 2-Week Launch Sprint)  
-**Visa Evidence Track:** UK Global Talent Visa — Exceptional Promise (Digital Technology / Product & Tech Leadership)  
-**Cost Model:** Absolute $0.00 / month Infrastructure Footprint (100% Client-Side Wasm + Edge Vercel Free Tier)
+
+**Product Name:** DATA247 (data247.co.in)
+**Author & Product Lead:** Vijeta Singh Rajput (Founder & Product Lead | Ex-Product Lead at NEBE)
+**Status:** Approved & Ready for Implementation
+**Sprint Window:** October 03 – October 17, 2026 (Rapid 2-Week Launch Sprint)
+**Cost Model:** Efficient, Scalable Client-Side Compute Architecture
+**Document Classification:** Proprietary Commercial Specification
 
 ---
 
@@ -23,16 +24,19 @@
 ## 2. Executive Summary & Product Vision
 
 ### 2.1 Vision Statement
-**data247.co.in** is an ultra-fast, zero-latency in-browser SQL and data analytics workbench designed for aspiring data professionals across India and global emerging markets. The platform eliminates the divide between static syntax documentation and expensive cloud sandboxes by executing industrial-strength analytical queries (DuckDB-Wasm) directly in the user’s browser memory at **$0.00 server cost**.
+
+**data247.co.in** is an ultra-fast, zero-latency in-browser SQL and data analytics workbench designed for aspiring data professionals across India and global emerging markets. The platform eliminates the divide between static syntax documentation and expensive cloud sandboxes by executing industrial-strength analytical queries directly in the user’s browser memory with a highly efficient, cost-effective compute model.
 
 ### 2.2 Core Product Pillars
-1. **Zero Infrastructure Cost ($0.00/mo):** Shifts 100% of compute overhead from cloud virtual machines to client-side WebAssembly (Wasm).
-2. **Sub-100ms In-Browser Querying:** Direct analytical execution against local memory, Parquet, and CSV files without network roundtrips.
-3. **Bilingual Accessibility (English + Hinglish):** Purpose-built curriculum localization ensuring Tier-2, Tier-3, and rural Indian learners master technical concepts without linguistic friction.
-4. **Programmatic SEO (pSEO) Capture:** Pre-rendered, indexable dynamic route network (`/sql/[topic]`) with rich Schema.org metadata to capture organic technical search queries.
-5. **Integrated Career Progression:** Unifies learning notes, recorded lectures, interactive MCQs, interview guides, and a verified micro-session Tutor Marketplace.
+
+1.  **Scalable Infrastructure Model:** Shifts 100% of compute overhead from cloud virtual machines to client-side WebAssembly (Wasm).
+2.  **Sub-100ms In-Browser Querying:** Direct analytical execution against local memory, Parquet, and CSV files without network roundtrips.
+3.  **Bilingual Accessibility (English + Hinglish):** Purpose-built curriculum localization ensuring Tier-2, Tier-3, and rural Indian learners master technical concepts without linguistic friction.
+4.  **Programmatic SEO (pSEO) Capture:** Pre-rendered, indexable dynamic route network (`/sql/[topic]`) with rich Schema.org metadata to capture organic technical search queries.
+5.  **Integrated Career Progression:** Unifies learning notes, recorded lectures, interactive MCQs, interview guides, and a verified micro-session Tutor Marketplace.
 
 ---
+
 
 ## 3. Target Personas & Problem Definition
 
@@ -54,14 +58,16 @@
 ## 4. System Architecture & Technical Specifications
 
 ### 4.1 Production Technology Stack
-* **Framework:** Next.js 15 (App Router, Turbopack, React 19).
-* **Styling & Design System:** Tailwind CSS v3.4+, Lucide React, Shadcn/Radix UI tokens.
-* **Wasm Analytical Engine:** `@duckdb/duckdb-wasm` managed inside isolated Web Workers.
-* **Table Virtualization & Code Editor:** TanStack Table v8 (high-speed data grid) + Monaco Editor / CodeJar.
-* **Hosting & Delivery:** Vercel Edge CDN (Hobby Tier, $0.00 operational bill).
-* **Local State Persistence:** Browser IndexedDB via Dexie.js (stores user queries, bookmarks, and quiz progress locally).
+
+*   **Framework:** Modern Jamstack Framework (App Router, SSR/SSG)
+*   **Styling & Design System:** Utility-First CSS Framework & UI Primitives
+*   **Wasm Analytical Engine:** High-Performance In-Memory OLAP Engine (Wasm)
+*   **Table Virtualization & Code Editor:** Virtualized Data Grid Component & In-Browser IDE
+*   **Hosting & Delivery:** Global Edge CDN for High-Speed Static Asset Delivery
+*   **Local State Persistence:** Browser IndexedDB for local, on-device user data storage.
 
 ---
+
 
 ## 5. Functional Scope & Feature Specifications
 

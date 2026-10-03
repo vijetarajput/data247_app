@@ -92,10 +92,7 @@ export type WorkerResponse =
 [TanStack Table Viewport] (Hydrates row objects into virtualized DOM list in < 16ms)
 
 ---
-
-### Chunk 6: Section 5 — Storage & File System Architecture (VFS)
-
-```markdown
+```
 ## 5. Storage & File System Architecture (VFS)
 
 DuckDB-Wasm manages an in-memory Virtual File System (VFS). Static tabular datasets are pre-compiled into lightweight columnar Parquet formats and served over CDN:
@@ -110,9 +107,6 @@ DuckDB-Wasm manages an in-memory Virtual File System (VFS). Static tabular datas
 
 ---
 
-### Chunk 7: Section 6 — Programmatic SEO (pSEO) & Dynamic Route Hierarchy
-
-```markdown
 ## 6. Programmatic SEO (pSEO) & Dynamic Route Hierarchy
 
 To capture high-intent developer and learner search traffic across India and globally, DATA247 dynamically generates search-optimized landing pages at build time.
@@ -151,10 +145,7 @@ export function generateTopicSchema(topic: { title: string; slug: string; descri
 }
 
 ---
-
-### Chunk 8: Section 7 — Security, DPDP Act 2023 & Zero-Trust Sandbox
-
-```markdown
+```
 ## 7. Security, DPDP Act 2023 & Zero-Trust Sandbox
 
 * **Complete Immunity to Server SQL Injection:** Because SQL execution is 100% confined to the browser's local WebAssembly instance, malicious SQL queries (`DROP TABLE`, `UNION SELECT`) only impact the user's isolated local memory. Backend databases cannot be compromised.

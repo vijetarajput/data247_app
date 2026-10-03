@@ -1,7 +1,7 @@
 # Technical Architecture Specification: In-Browser Analytical Engine (v3.0)
 
 **Product Name:** DATA247 (data247.co.in)  
-**System Architect & Product Lead:** Vijeta Singh Rajput (Founder & Product Lead | Ex-Product Lead at NEBE)  
+**System Architect & Product Lead:** Vijetasingh Rajput (Founder & Product Lead | Ex-Product Lead at NEBE)  
 **Target Release:** October 2026 (Production Native Engine)  
 **Target Infrastructure Cost:** $0.00 / month (100% Client-Side Compute + Vercel Edge Free Tier)  
 **Evidence Track:** UK Global Talent Visa — Exceptional Promise (Digital Technology / Software Architecture & Product Leadership)

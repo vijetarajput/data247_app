@@ -91,6 +91,43 @@ export type WorkerResponse =
 [Virtualized Table Viewport] (Hydrates row objects into virtualized DOM list in < 16ms)
 
 ---
+
+### 4.2 Web Worker RPC Protocol & Data Models
+
+The communication layer between the React UI thread and the analytical compute worker is governed by a typed Remote Procedure Call (RPC) protocol. Alongside execution types, the platform enforces strict contract structures for all interactive student reviews, feedback inputs, and video assets:
+
+```typescript
+// types/worker.d.ts
+
+export type WorkerRequest = 
+  | { type: 'INIT_ENGINE' }
+  | { type: 'LOAD_DATASET'; name: string; url: string }
+  | { type: 'EXECUTE_QUERY'; queryId: string; sql: string };
+
+export type WorkerResponse = 
+  | { type: 'ENGINE_READY' }
+  | { type: 'DATASET_LOADED'; name: string; rows: number }
+  | { type: 'QUERY_SUCCESS'; queryId: string; columns: string[]; rows: any[]; executionMs: number }
+  | { type: 'QUERY_ERROR'; queryId: string; error: string };
+
+
+// types/review.ts
+
+export interface LearnerReview {
+  id: string;
+  learnerName: string;
+  role: string;               // e.g., "Aspiring Data Analyst" | "Junior BI Developer"
+  city: string;               // e.g., "Bhopal, MP" | "Coimbatore, TN"
+  rating: number;             // 1 to 5
+  comment: string;            // Bilingual or English text
+  mediaType: 'text' | 'video';
+  videoUrl?: string;          // Streamable asset URL
+  thumbnailUrl?: string;
+  isVerifiedLearner: boolean;
+  status: 'pending' | 'approved' | 'rejected';
+  createdAt: string;
+}
+
 ```
 ## 5. Storage & File System Architecture (VFS)
 

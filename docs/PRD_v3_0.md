@@ -100,7 +100,7 @@
 
 ### 6.2 Structured Metadata (JSON-LD)
 Every programmatic page automatically injects Schema.org `TechArticle` and `Course` JSON-LD headers:
-```json
+`json
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
@@ -115,7 +115,7 @@ Every programmatic page automatically injects Schema.org `TechArticle` and `Cour
     "name": "DATA247",
     "url": "https://data247.co.in"
   }
-}
+}`
 
 ## 7. Security, Compliance & DPDP Act 2023 Architecture
 

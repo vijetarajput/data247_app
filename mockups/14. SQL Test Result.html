@@ -1,0 +1,471 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="web_dashboard" name="shell-type">
+<title>DATA247 - My Learning</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#dce1ff",
+            "on-primary": "#ffffff",
+            "secondary": "#0051d5",
+            "on-secondary-fixed-variant": "#003ea8",
+            "surface-container-high": "#e2e7ff",
+            "secondary-container": "#316bf3",
+            "surface-bright": "#faf8ff",
+            "inverse-on-surface": "#eef0ff",
+            "tertiary-container": "#004a31",
+            "outline": "#757682",
+            "outline-variant": "#c5c5d3",
+            "surface": "#faf8ff",
+            "inverse-surface": "#283044",
+            "inverse-primary": "#b6c4ff",
+            "surface-container": "#eaedff",
+            "on-surface-variant": "#444651",
+            "surface-variant": "#dae2fd",
+            "secondary-fixed-dim": "#b4c5ff",
+            "on-tertiary-fixed-variant": "#005236",
+            "on-secondary": "#ffffff",
+            "on-error-container": "#93000a",
+            "primary": "#00236f",
+            "tertiary": "#00311f",
+            "primary-container": "#1e3a8a",
+            "on-primary-fixed": "#00164e",
+            "surface-container-low": "#f2f3ff",
+            "on-primary-container": "#90a8ff",
+            "error": "#ba1a1a",
+            "background": "#faf8ff",
+            "surface-dim": "#d2d9f4",
+            "surface-container-highest": "#dae2fd",
+            "on-tertiary-container": "#27c38a",
+            "secondary-fixed": "#dbe1ff",
+            "on-background": "#131b2e",
+            "on-primary-fixed-variant": "#264191",
+            "surface-tint": "#4059aa",
+            "tertiary-fixed-dim": "#4edea3",
+            "on-tertiary-fixed": "#002113",
+            "on-secondary-fixed": "#00174b",
+            "on-error": "#ffffff",
+            "on-secondary-container": "#fefcff",
+            "error-container": "#ffdad6",
+            "tertiary-fixed": "#6ffbbe",
+            "primary-fixed-dim": "#b6c4ff",
+            "on-tertiary": "#ffffff",
+            "on-surface": "#131b2e"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter-tablet": "1rem",
+            "margin-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "margin-desktop": "2.5rem",
+            "space-lg": "1.5rem",
+            "margin-tablet": "1.5rem",
+            "margin": "2rem",
+            "gutter": "1.5rem",
+            "gutter-desktop": "1.5rem",
+            "space-2xl": "3rem",
+            "space-md": "1rem",
+            "space-xl": "2rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "display-lg": ["Plus Jakarta Sans"],
+            "label-lg": ["Inter"],
+            "display-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "code-md": ["JetBrains Mono"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "label-md": ["Inter"],
+            "body-lg": ["Inter"]
+          },
+          "fontSize": {
+            "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "700"}],
+            "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+            "display-md": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "headline-lg": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+            "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+            "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+            "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+            "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+            "code-md": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+            "headline-md": ["22px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+            "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased">
+<!-- Desktop Learner Sidebar -->
+<aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+<div class="flex flex-col flex-1">
+<div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant/20">
+<img alt="DATA247 Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XbZWjggA1IkamJ9JjBLsdSAN3lsRDrO5Z67Us49h_eIMDacIoAUYqnONesdTmaXmFnIK8mrYgyfdCmED0gF_HZxnc9ll2loIpsGFRNxC6_Z1cOBli_CtwpfL4LGVoELTh4El_p1WXOHbv-Xc19hwUZexD466TFkbsy1d9Jwtv-ZkYlYwnYow624zuP1i0KjEq-KSUfxGvgqRIJrBaxFxqOrjguCe9OvpfwurblIzXd2js_tRaypxKrnrI">
+<span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight">DATA247</span>
+</div>
+<div class="px-space-md pt-space-lg pb-space-sm">
+<span class="px-space-sm text-[10px] uppercase font-bold tracking-wider text-outline">Core Navigation</span>
+</div>
+<nav class="flex-1 px-space-sm space-y-space-xs">
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[20px]">space_dashboard</span>
+<span class="">Dashboard</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-surface-container text-primary font-semibold border-l-4 border-primary pl-[12px] transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[20px]">school</span>
+<span class="">Learning</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+<span class="">Practice</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[20px]">quiz</span>
+<span class="">Interview Prep</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[20px]">group</span>
+<span class="">Tutors</span>
+</a>
+</nav>
+</div>
+<div class="p-space-sm border-t border-outline-variant/20 bg-surface-container-lowest/60">
+<div class="px-space-sm py-space-xs">
+<span class="text-[10px] uppercase font-bold tracking-wider text-outline">Workspace</span>
+</div>
+<nav class="space-y-space-xs">
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span class="">Profile</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+<span class="">Settings</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[18px]">help</span>
+<span class="">Help &amp; Support</span>
+</a>
+</nav>
+</div>
+</aside>
+<!-- Main Shell -->
+<div class="pl-64 flex flex-col min-h-screen">
+<!-- Top Header -->
+<header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/20 z-40 px-space-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.02)]">
+<div class="flex-1 max-w-xl">
+<div class="relative flex items-center w-full">
+<span class="material-symbols-outlined absolute left-space-md text-[20px] text-outline pointer-events-none">search</span>
+<input class="w-full h-10 pl-11 pr-space-md bg-surface-container-low border border-outline-variant/40 rounded-xl text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:border-secondary focus:bg-surface-container-lowest transition-all" placeholder="Search notes, lessons, interview questions..." type="text">
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<button aria-label="Notifications" class="relative p-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[22px]">notifications</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span>
+</button>
+<div class="h-6 w-px bg-outline-variant/40"></div>
+<div class="flex items-center gap-space-sm cursor-pointer select-none">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Alex Morgan</span>
+<span class="font-body-sm text-[11px] leading-tight text-on-surface-variant">Data Analytics Student</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Page Content Container -->
+<main class="relative w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-space-xl py-space-xl flex flex-col gap-space-xl">
+<!-- Top Nav & Breadcrumbs -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-body-sm font-body-sm text-outline">
+<a class="hover:text-primary transition-colors" href="#">My Learning</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Data Analytics</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Practice</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">SQL</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">SQL Fundamentals</span>
+</nav>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-label-md text-label-md self-start md:self-auto shadow-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span class="">Back to Practice</span>
+</a>
+</div>
+<!-- Header Section -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-lowest p-space-xl rounded-xl shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container">check_circle</span>
+            Test Completed
+          </span>
+<span class="text-body-sm font-body-sm text-outline">Submitted 2 mins ago</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">SQL Fundamentals — Test Result</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Your test has been submitted successfully. Review your performance breakdown below.</p>
+</div>
+<!-- Quick Action Jump Button -->
+<div class="flex items-center gap-space-sm">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container shadow-md transition-all" href="#answer-review">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span class="">Review Answers</span>
+</a>
+</div>
+</div>
+<!-- Result Summary Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl flex flex-col gap-space-xl shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Score & Accuracy Metrics -->
+<div class="lg:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-space-md">
+<!-- Total Score -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-outline tracking-wider font-semibold">Total Score</span>
+<div class="mt-space-sm flex items-baseline gap-1">
+<span class="font-display-md text-display-md text-on-surface font-bold leading-none">18</span>
+<span class="font-headline-sm text-headline-sm text-outline">/ 25</span>
+</div>
+<span class="mt-space-xs font-body-sm text-body-sm text-outline">Points Earned</span>
+</div>
+<!-- Accuracy Rate -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider font-semibold">Accuracy</span><div class="mt-space-sm flex flex-col gap-space-xs"><span class="font-display-md text-display-md text-primary font-bold leading-none">72%</span><div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden"><div class="bg-secondary h-2 rounded-full" style="width: 72%"></div></div></div><span class="mt-space-xs font-body-sm text-body-sm text-outline">Passing benchmark: 70%</span></div>
+<!-- Correct Count -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="font-label-sm text-label-sm uppercase text-outline tracking-wider font-semibold">Correct</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-display-md text-display-md text-tertiary font-bold leading-none">18</span>
+</div>
+<span class="mt-space-xs font-body-sm text-body-sm text-outline">Questions passed</span>
+</div>
+<!-- Incorrect & Unanswered -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm uppercase text-outline tracking-wider font-semibold">Missed</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-sm">
+<span class="font-display-md text-display-md text-error font-bold leading-none">5</span>
+<span class="font-body-sm text-body-sm text-outline">/ 2 skipped</span>
+</div>
+<span class="mt-space-xs font-body-sm text-body-sm text-outline">5 incorrect, 2 unanswered</span>
+</div>
+</div>
+<!-- Action Panel -->
+<div class="lg:col-span-4 flex flex-col gap-space-sm bg-surface-container-high/40 p-space-lg rounded-xl shadow-inner">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">Next Step</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Review missed queries to patch relational conceptual gaps before retesting.</p>
+<div class="mt-space-sm flex flex-col sm:flex-row lg:flex-col gap-space-xs">
+<button class="w-full flex items-center justify-center gap-space-xs px-space-md py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container transition-all font-label-md text-label-md shadow-sm" onclick="window.scrollTo({top: document.getElementById('answer-review').offsetTop - 80, behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[18px]">rule</span>
+<span class="">Review Detailed Answers</span>
+</button>
+<button class="w-full flex items-center justify-center gap-space-xs px-space-md py-2.5 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-all font-label-md text-label-md shadow-sm" onclick="alert('Retake initiated. Redirecting to Question 1...')">
+<span class="material-symbols-outlined text-[18px] text-outline">replay</span>
+<span class="">Try Again</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Status Filter Bar (Tied directly to review section) -->
+<div class="pt-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md" id="answer-review">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Answer Review</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Review your responses, correct keys, and concise explanations.</p>
+</div>
+<!-- Filter Pill Tabs -->
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-xl shadow-inner">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest font-label-md text-label-md text-primary font-semibold shadow-sm transition-all" id="filter-all" onclick="filterQuestions('all')">
+            All Questions (25)
+          </button>
+<button class="px-space-md py-1.5 rounded-lg text-outline hover:text-on-surface font-label-md text-label-md transition-all" id="filter-incorrect" onclick="filterQuestions('incorrect')">
+            Incorrect (5)
+          </button>
+<button class="px-space-md py-1.5 rounded-lg text-outline hover:text-on-surface font-label-md text-label-md transition-all" id="filter-unanswered" onclick="filterQuestions('unanswered')">
+            Unanswered (2)
+          </button>
+<button class="px-space-md py-1.5 rounded-lg text-outline hover:text-on-surface font-label-md text-label-md transition-all" id="filter-correct" onclick="filterQuestions('correct')">
+            Correct (18)
+          </button>
+</div>
+</div>
+<!-- Question Cards Stream -->
+<div class="flex flex-col gap-space-lg"><div class="question-item correct bg-surface-container-low/60 rounded-xl p-space-lg flex flex-col gap-space-md shadow-sm"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm uppercase font-bold text-outline tracking-wider">Question 1 of 25</span></div><span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-highest text-tertiary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px] text-tertiary-container">check_circle</span>Correct</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface">Which SQL statement is used to extract data from a relational database?</h3><div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm pt-space-xs"><div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/30"><div class="flex items-center gap-space-sm"><span class="w-6 h-6 rounded-lg bg-surface-container-high text-primary flex items-center justify-center font-label-sm text-label-sm font-bold">A</span><span class="font-code-md text-code-md text-on-surface font-semibold">SELECT</span></div><span class="inline-flex items-center gap-1 text-[11px] font-semibold text-tertiary"><span class="material-symbols-outlined text-[14px]">check</span>Your Answer: Correct</span></div><div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low opacity-60"><div class="flex items-center gap-space-sm"><span class="w-6 h-6 rounded-lg bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm font-medium">B</span><span class="font-code-md text-code-md text-on-surface">EXTRACT</span></div></div><div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low opacity-60"><div class="flex items-center gap-space-sm"><span class="w-6 h-6 rounded-lg bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm font-medium">C</span><span class="font-code-md text-code-md text-on-surface">GET</span></div></div><div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low opacity-60"><div class="flex items-center gap-space-sm"><span class="w-6 h-6 rounded-lg bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm font-medium">D</span><span class="font-code-md text-code-md text-on-surface">PULL</span></div></div></div><div class="p-space-md rounded-xl bg-surface-container-lowest flex items-start gap-space-sm shadow-sm"><span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">info</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold">Explanation</span><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">The <code class="font-code-md text-code-md px-1 py-0.5 bg-surface-container-low rounded">SELECT</code> statement retrieves rows from one or more tables in a relational database management system.</p></div></div><div class="pt-space-sm border-t border-outline-variant/20 flex items-center justify-between"><button class="inline-flex items-center gap-1 px-space-md py-2 rounded-xl bg-surface-container-lowest text-outline font-label-md text-label-md opacity-60 cursor-not-allowed shadow-sm" disabled="" type="button"><span class="material-symbols-outlined text-[16px]">arrow_back</span><span class="">Previous</span></button><span class="font-label-md text-label-md font-semibold text-on-surface">1 / 25</span><button class="inline-flex items-center gap-1 px-space-md py-2 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-all shadow-sm" type="button"><span class="">Next</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button></div></div></div>
+<!-- Bottom Action Row -->
+<div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-low p-space-lg rounded-xl">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="">Result safely recorded in your learning record.</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-xs px-space-lg py-2.5 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all font-label-md text-label-md shadow-sm" onclick="alert('Retake initiated. Redirecting to Question 1...')">
+<span class="material-symbols-outlined text-[18px] text-outline">replay</span>
+<span class="">Retake Test</span>
+</button>
+<a class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-xs px-space-lg py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container transition-all font-label-md text-label-md shadow-md" href="#">
+<span class="">Back to Practice</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function filterQuestions(type) {
+    const tabs = ['all', 'incorrect', 'unanswered', 'correct'];
+    tabs.forEach(tab => {
+      const btn = document.getElementById('filter-' + tab);
+      if (btn) {
+        if (tab === type) {
+          btn.className = 'px-space-md py-1.5 rounded-lg bg-surface-container-lowest font-label-md text-label-md text-primary font-semibold shadow-sm transition-all';
+        } else {
+          btn.className = 'px-space-md py-1.5 rounded-lg text-outline hover:text-on-surface font-label-md text-label-md transition-all';
+        }
+      }
+    });
+
+    const items = document.querySelectorAll('.question-item');
+    items.forEach(item => {
+      if (type === 'all') {
+        item.classList.remove('hidden');
+      } else {
+        if (item.classList.contains(type)) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      }
+    });
+  }
+</script></main>
+</div>
+<!-- Interactive Hierarchy & Tabs State Switcher Script -->
+<script>
+    function switchHierarchyView(viewId) {
+      const views = ['view-subjects', 'view-sql-modules', 'view-module-inner'];
+      views.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add('hidden');
+      });
+
+      const activeEl = document.getElementById(viewId);
+      if (activeEl) {
+        activeEl.classList.remove('hidden');
+      }
+
+      // Update top demo buttons
+      const btn1 = document.getElementById('nav-view-1');
+      const btn2 = document.getElementById('nav-view-2');
+      const btn3 = document.getElementById('nav-view-3');
+
+      [btn1, btn2, btn3].forEach(btn => {
+        if (!btn) return;
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-transparent', 'text-on-surface-variant');
+      });
+
+      if (viewId === 'view-subjects' && btn1) {
+        btn1.classList.add('bg-primary', 'text-on-primary');
+        btn1.classList.remove('bg-transparent', 'text-on-surface-variant');
+      } else if (viewId === 'view-sql-modules' && btn2) {
+        btn2.classList.add('bg-primary', 'text-on-primary');
+        btn2.classList.remove('bg-transparent', 'text-on-surface-variant');
+      } else if (viewId === 'view-module-inner' && btn3) {
+        btn3.classList.add('bg-primary', 'text-on-primary');
+        btn3.classList.remove('bg-transparent', 'text-on-surface-variant');
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function switchModuleTab(tabName) {
+      const tabNotes = document.getElementById('module-tab-notes');
+      const tabVideos = document.getElementById('module-tab-videos');
+      const btnNotes = document.getElementById('tab-btn-notes');
+      const btnVideos = document.getElementById('tab-btn-videos');
+
+      if (tabName === 'notes') {
+        tabNotes.classList.remove('hidden');
+        tabVideos.classList.add('hidden');
+        btnNotes.classList.add('border-primary', 'text-primary');
+        btnNotes.classList.remove('border-transparent', 'text-outline');
+        btnVideos.classList.add('border-transparent', 'text-outline');
+        btnVideos.classList.remove('border-primary', 'text-primary');
+      } else {
+        tabVideos.classList.remove('hidden');
+        tabNotes.classList.add('hidden');
+        btnVideos.classList.add('border-primary', 'text-primary');
+        btnVideos.classList.remove('border-transparent', 'text-outline');
+        btnNotes.classList.add('border-transparent', 'text-outline');
+        btnNotes.classList.remove('border-primary', 'text-primary');
+      }
+    }
+
+    function switchNotesLang(lang) {
+      const enContent = document.getElementById('notes-content-en');
+      const hinglishContent = document.getElementById('notes-content-hinglish');
+      const subEn = document.getElementById('subtab-en');
+      const subHinglish = document.getElementById('subtab-hinglish');
+
+      if (lang === 'en') {
+        enContent.classList.remove('hidden');
+        hinglishContent.classList.add('hidden');
+        subEn.classList.add('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+        subEn.classList.remove('text-on-surface-variant', 'font-medium');
+        subHinglish.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+        subHinglish.classList.add('text-on-surface-variant', 'font-medium');
+      } else {
+        hinglishContent.classList.remove('hidden');
+        enContent.classList.add('hidden');
+        subHinglish.classList.add('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+        subHinglish.classList.remove('text-on-surface-variant', 'font-medium');
+        subEn.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+        subEn.classList.add('text-on-surface-variant', 'font-medium');
+      }
+    }
+  </script>
+
+
+</body></html>

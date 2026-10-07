@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"error-container":"#ffdad6","on-primary":"#ffffff","secondary-fixed":"#dbe1ff","surface-dim":"#d2d9f4","secondary-fixed-dim":"#b4c5ff","on-secondary-container":"#fefcff","surface-container-low":"#f2f3ff","error":"#ba1a1a","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","on-error":"#ffffff","secondary-container":"#316bf3","surface-tint":"#4059aa","tertiary-container":"#004a31","on-tertiary-fixed-variant":"#005236","primary":"#00236f","on-surface":"#131b2e","on-surface-variant":"#444651","on-primary-fixed-variant":"#264191","surface-bright":"#faf8ff","outline-variant":"#c5c5d3","on-tertiary-container":"#27c38a","on-primary-fixed":"#00164e","surface-container-high":"#e2e7ff","inverse-surface":"#283044","on-background":"#131b2e","surface-container":"#eaedff","tertiary":"#00311f","secondary":"#0051d5","background":"#faf8ff","outline":"#757682","on-tertiary-fixed":"#002113","inverse-on-surface":"#eef0ff","on-primary-container":"#90a8ff","surface-container-highest":"#dae2fd","tertiary-fixed":"#6ffbbe","tertiary-fixed-dim":"#4edea3","inverse-primary":"#b6c4ff","surface-variant":"#dae2fd","on-secondary":"#ffffff","on-secondary-fixed":"#00174b","primary-container":"#1e3a8a","primary-fixed-dim":"#b6c4ff","on-error-container":"#93000a","primary-fixed":"#dce1ff","surface":"#faf8ff","on-secondary-fixed-variant":"#003ea8"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"gutter-desktop":"1.5rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-xl":"2rem",margin:"2rem","margin-desktop":"2.5rem","space-2xl":"3rem",gutter:"1.5rem","margin-mobile":"1rem","gutter-tablet":"1rem","margin-tablet":"1.5rem"},fontFamily:{"display-lg":["Plus Jakarta Sans"],"code-md":["JetBrains Mono"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"display-md":["Plus Jakarta Sans"],"body-md":["Inter"],"label-lg":["Inter"],"body-lg":["Inter"]},fontSize:{"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.025em",fontWeight:"700"}],"code-md":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"display-md":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface/90 backdrop-blur-xl z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md min-w-[240px]"><img alt="DATA247 brand logo mark: modern geometric data emblem combining interconnected analytics nodes, clean bar chart dynamic lines, and a sleek data cube or stylized 24/7 infinity loop in deep indigo (#1E3A8A) and vibrant tech blue (#2563EB). Minimalist, executive, professional SaaS EdTech logo.. Design context: - Primary color: #1e3a8a
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XbZWjggA1IkamJ9JjBLsdSAN3lsRDrO5Z67Us49h_eIMDacIoAUYqnONesdTmaXmFnIK8mrYgyfdCmED0gF_HZxnc9ll2loIpsGFRNxC6_Z1cOBli_CtwpfL4LGVoELTh4El_p1WXOHbv-Xc19hwUZexD466TFkbsy1d9Jwtv-ZkYlYwnYow624zuP1i0KjEq-KSUfxGvgqRIJrBaxFxqOrjguCe9OvpfwurblIzXd2js_tRaypxKrnrI"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">DATA247</span><span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Tutor Portal</span></div><div class="flex-1 max-w-xl hidden md:flex items-center"><div class="w-full flex items-center gap-space-sm px-space-md py-space-xs rounded-xl bg-surface-container-low text-on-surface-variant"><span class="material-symbols-outlined text-[20px] text-outline">search</span><input class="w-full bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Search booking requests, learners, sessions..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="relative p-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-lg text-label-lg text-on-surface leading-tight">Priya Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Senior Data Analyst &amp; Tutor</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest z-40 flex flex-col justify-between p-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="px-space-sm"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Management</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span>Dashboard</a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl transition-all bg-primary-container text-on-primary font-label-lg shadow-sm" data-path="booking-requests" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span>Booking Requests</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="upcoming-sessions" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span>Upcoming Sessions</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">badge</span>Profile</a></nav></div><div class="flex flex-col gap-space-xs pt-space-md"><div class="px-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Account</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span>Settings</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="help-support" href="#"><span class="material-symbols-outlined text-[20px]">help</span>Help &amp; Support</a></nav></div></aside><div class="pl-64"><main class="relative pt-16 min-h-screen bg-surface px-margin-desktop py-space-xl"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-md mb-space-xl">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span>Tutor Portal</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="text-primary font-medium">Booking Requests</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Booking Requests</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Review and manage learner session requests.</p>
+</div>
+<div class="flex items-center">
+<span class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider shadow-sm" id="pending-counter-pill">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span id="pending-count-text">1 Pending Request</span>
+</span>
+</div>
+</div>
+</div>
+<section class="flex flex-col gap-space-md mb-space-2xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Pending Requests</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface-variant font-code-md text-code-md">1</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Requires tutor confirmation within 24 hours</span>
+</div>
+<!-- Active Pending Request Card (Interactive Component) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg transition-all duration-300" id="booking-card-main">
+<!-- Interactive Notification Banner (Initially Hidden) -->
+<div class="hidden mb-space-lg rounded-xl p-space-md transition-all" id="state-feedback-banner">
+<!-- Rendered via JS -->
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg pb-space-lg">
+<div class="flex items-start gap-space-md">
+<img class="w-14 h-14 rounded-xl object-cover shadow-sm" data-alt="Portrait photo of a young professional learner named Alex Morgan, wearing a neutral collared shirt in a bright modern tech study space, natural warm indoor lighting, clean bokeh background, focused learning persona." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuK6u1dHDP13pcheaU8ne9tq99IbjrHpJ62sdSDVV9p1o5bM64A7wmdRfDeb3k1DMb2AFFFkgyq7jLqyI3XdSuiD1aS79ytmMsXWgeyZGm_9sLrVfCpYsvNaNMenzlLXc3NOqci3BomjKAH89Bly21lLcW4yawJObaN9NNL8tnpN9NVdvzD3VYLmn3m5i1Wp_xxr-8HpDmbTRnYkGubvwjxksv1bMBeVgrJE6mzVmiwHcovxZgkeAk"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface">Alex Morgan</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm" id="booking-status-tag">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                Pending Approval
+              </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Data Analytics Student</span>
+<div class="flex items-center gap-space-xs text-outline font-body-sm text-body-sm mt-1">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span>alex.morgan@example.com</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-center" id="action-buttons-group">
+<button class="px-space-md py-2 rounded-xl bg-surface-container-low hover:bg-error-container text-on-surface hover:text-on-error-container font-label-md text-label-md transition-colors flex items-center gap-space-xs" id="decline-trigger-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+            Decline
+          </button>
+<button class="px-space-lg py-2 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-sm transition-all flex items-center gap-space-xs" id="approve-trigger-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+            Approve Session
+          </button>
+</div>
+</div>
+<!-- Specification Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-md bg-surface-container-low/50 rounded-xl p-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Session Type</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">videocam</span>
+            30-Min 1:1 (Google Meet)
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Date &amp; Time</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-1">25 Oct 2024, 4:00 PM</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Indian Standard Time (IST)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Duration</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-outline text-[18px]">schedule</span>
+            30 Minutes
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Session Fee</span>
+<span class="font-headline-sm text-headline-sm text-primary mt-1">₹399</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Learner prepaid via Razorpay</span>
+</div>
+</div>
+<!-- Detailed Agenda Context -->
+<div class="mt-space-md pt-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-outline mt-0.5">help_outline</span>
+<div class="flex-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Learner's Note / Focus Area</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5">"Need guidance reviewing SQL window functions (ROW_NUMBER vs DENSE_RANK) and feedback on a retail cohort analysis project."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Recent Requests (History Table) -->
+<section class="flex flex-col gap-space-md mb-space-2xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Recent Requests</h2>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface-variant font-code-md text-code-md">3</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Showing last 7 days</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-space-md px-space-lg" scope="col">Learner</th>
+<th class="py-space-md px-space-md" scope="col">Session Type</th>
+<th class="py-space-md px-space-md" scope="col">Date &amp; Time</th>
+<th class="py-space-md px-space-md" scope="col">Fee</th>
+<th class="py-space-md px-space-md" scope="col">Status</th>
+<th class="py-space-md px-space-lg" scope="col">Action / Note</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-lg object-cover" data-alt="Square portrait of learner Alex Morgan, close up headshot against minimal cool studio background with subtle soft studio blue illumination, natural expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaAC0OiObZFdsMqF4_u5FptVAHoyV15Dr2BH8Y0nHlYED9OmmrcSZpObJ13xuE1TH0tm2HGTQ1dwXXJ41XcvHkWt_XvXCrVw9bCJk4x6NpwjuQBrv6DixCkzB4ELQhwWu8ISvSYPM2n5bIaqX7iSnKE1qZi3UoLVYE85a2ZEhDMrrimIHG23vhS-rnDApf_3rUSz9qThmnGT0Z93C9Kg7FpCOSwey5WME_7-xCxJwL3DWmhDffmQ5y"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface leading-tight">Alex Morgan</span>
+<span class="font-body-sm text-body-sm text-outline">alex.morgan@example.com</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  30-Minute 1:1 Session
+                </div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">24 Oct 2024</span>
+<span class="font-body-sm text-body-sm text-outline">6:00 PM IST</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-code-md text-code-md font-medium text-primary">₹399</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-high text-tertiary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+                  Approved
+                </span>
+</td>
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container">check_circle</span>
+<span>Payment Completed • Completed Session</span>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="bg-surface-container-low/30 hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-lg object-cover" data-alt="Portrait headshot of Neha Patel, young female analyst with neat hair and professional attire, standing in an illuminated tech office corner, subtle bokeh lights in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb4EqWf2Oab4cLiInD7qc8q7wesK-Kzf20th_4MrghW6WuzIJpWhXikww7vMdwUTH-i8xkIU5ydO1oEMWWikBO1TIkZkQfLMBRjaorZUoqt90PNDx7dg_Gez9PFdc3jEZTyDpXWUnj9SZCNmPob3Y2lMUPSh3ONY5akzaivotq_e5G6MogzAFzRi1Jl2VBdYdYkjgXBvVlMXJdHryDRnBYtocciU6v_v5VifzcT4COpvHtNwoK3AJR"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface leading-tight">Neha Patel</span>
+<span class="font-body-sm text-body-sm text-outline">neha.p@analyticslab.io</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  30-Minute 1:1 Session
+                </div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">23 Oct 2024</span>
+<span class="font-body-sm text-body-sm text-outline">11:30 AM IST</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-code-md text-code-md font-medium text-primary">₹399</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Declined
+                </span>
+</td>
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">info</span>
+<span>Time slot conflict • Learner notified</span>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-lg object-cover" data-alt="Portrait headshot of Rahul Verma, an executive junior data engineer wearing smart glasses, softly lit interior workspace with modern minimalist design accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6dwifIW6Wvtcgv2gP9pFRCVcfh9thlYdI8pU4K3kq1ztJHXbQfj61VQPR0GlU3_WdgCAG8g8gvxMEkXw5ZNemPaza8rT9JzlKm3KkHqC8da7QaSjir8Td7lpsN0GZLVWss0ZBIeNyTmQJ7XqdQ_JW8LZkvMQTkt4BEkUKzitznQDZZU_i6y6aNj1NzaLFaVAHEU03vyI0AU8z8gIGy-5qZcJjjDG56zuBk4ysKg-fP8hxuUbz5Ain"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface leading-tight">Rahul Verma</span>
+<span class="font-body-sm text-body-sm text-outline">rahul.v@datasprint.org</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  30-Minute 1:1 Session
+                </div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">21 Oct 2024</span>
+<span class="font-body-sm text-body-sm text-outline">5:00 PM IST</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-code-md text-code-md font-medium text-primary">₹399</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-secondary-fixed text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Completed
+                </span>
+</td>
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">task_alt</span>
+<span>Session ended successfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Section 3: Simple Workflow Clarification Box -->
+<section class="bg-surface-container-low rounded-xl p-space-lg shadow-sm mb-space-lg">
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="material-symbols-outlined text-primary text-[20px]">account_tree</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Booking Lifecycle &amp; Payment Process</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md relative">
+<!-- Step 1 -->
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-primary font-code-md text-code-md font-bold">01</span>
+<span class="material-symbols-outlined text-outline text-[18px]">person_pin</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Student Requests Slot</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Learner selects an available calendar window from your public profile schedule.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary font-code-md text-code-md font-bold">02</span>
+<span class="material-symbols-outlined text-primary text-[18px]">gavel</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Tutor Approves / Declines</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">You verify timing and syllabus suitability. No payment is charged to or by you here.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-primary font-code-md text-code-md font-bold">03</span>
+<span class="material-symbols-outlined text-outline text-[18px]">credit_card</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Student Pays ₹399</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Learner is prompted via automated link to complete checkout securely through Razorpay.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-primary font-code-md text-code-md font-bold">04</span>
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">video_camera_front</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Confirmed Google Meet</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Session moves automatically to 'Upcoming Sessions' with dynamic meeting coordinates.</p>
+</div>
+</div>
+</section>
+<!-- Interactive Decline Confirmation Modal (Hidden by Default) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="decline-modal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl max-w-md w-full p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Decline Booking Request?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Are you sure you want to decline this booking request from <strong>Alex Morgan</strong> for 25 Oct 2024 at 4:00 PM?</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-outline bg-surface-container-low p-space-sm rounded-lg">The learner will be notified immediately and invited to choose an alternate slot on your availability calendar.</p>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" id="cancel-decline-modal-btn" type="button">
+          Cancel
+        </button>
+<button class="px-space-md py-2 rounded-xl bg-error text-on-error font-label-md text-label-md hover:opacity-90 transition-opacity" id="confirm-decline-modal-btn" type="button">
+          Decline Request
+        </button>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      const approveBtn = document.getElementById('approve-trigger-btn');
+      const declineBtn = document.getElementById('decline-trigger-btn');
+      const declineModal = document.getElementById('decline-modal');
+      const cancelDeclineModalBtn = document.getElementById('cancel-decline-modal-btn');
+      const confirmDeclineModalBtn = document.getElementById('confirm-decline-modal-btn');
+      
+      const banner = document.getElementById('state-feedback-banner');
+      const statusTag = document.getElementById('booking-status-tag');
+      const actionGroup = document.getElementById('action-buttons-group');
+      const counterPill = document.getElementById('pending-counter-pill');
+      const counterText = document.getElementById('pending-count-text');
+
+      approveBtn.addEventListener('click', function() {
+        // Change Status Pill to Approved — Payment Pending (teal/green tone)
+        statusTag.className = "inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-high text-tertiary-container font-label-sm text-label-sm";
+        statusTag.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>Approved &mdash; Payment Pending';
+
+        // Render Approval Banner Note
+        banner.className = "mb-space-lg rounded-xl p-space-md bg-surface-container-high flex flex-col gap-space-xs";
+        banner.innerHTML = `
+          <div class="flex items-center gap-space-sm text-on-surface">
+            <span class="material-symbols-outlined text-tertiary-container text-[20px]">check_circle</span>
+            <span class="font-label-lg text-label-lg">Booking approved. The learner has been notified and can now complete payment.</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant ml-7">
+            <strong>Note:</strong> No payment is collected from the tutor. Once Alex Morgan completes the ₹399 payment via Razorpay, this booking will automatically move to <em>'Upcoming Sessions'</em> with the Google Meet link generated.
+          </p>
+        `;
+        banner.classList.remove('hidden');
+
+        // Replace action triggers with confirmed indicator
+        actionGroup.innerHTML = `
+          <div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-xl bg-surface-container text-tertiary-container font-label-md text-label-md">
+            <span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+            Awaiting Learner Checkout
+          </div>
+        `;
+
+        // Update header count pill
+        counterPill.className = "inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider";
+        counterText.textContent = "0 Pending Actions";
+      });
+
+      declineBtn.addEventListener('click', function() {
+        declineModal.classList.remove('hidden');
+      });
+
+      cancelDeclineModalBtn.addEventListener('click', function() {
+        declineModal.classList.add('hidden');
+      });
+
+      confirmDeclineModalBtn.addEventListener('click', function() {
+        declineModal.classList.add('hidden');
+
+        // Change Status to Declined
+        statusTag.className = "inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm";
+        statusTag.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>Declined';
+
+        // Render Declined Banner Note
+        banner.className = "mb-space-lg rounded-xl p-space-md bg-surface-container-low flex flex-col gap-space-xs";
+        banner.innerHTML = `
+          <div class="flex items-center gap-space-sm text-on-surface">
+            <span class="material-symbols-outlined text-outline text-[20px]">do_not_disturb_on</span>
+            <span class="font-label-lg text-label-lg">Booking request declined.</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant ml-7">
+            The learner has been notified via email and invited to choose an alternate open slot on your schedule.
+          </p>
+        `;
+        banner.classList.remove('hidden');
+
+        // Replace buttons
+        actionGroup.innerHTML = `
+          <div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-xl bg-surface-container-high text-outline font-label-md text-label-md">
+            <span class="material-symbols-outlined text-[18px]">close</span>
+            Request Closed
+          </div>
+        `;
+
+        // Update header counter
+        counterPill.className = "inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider";
+        counterText.textContent = "0 Pending Actions";
+      });
+    })();
+  </script>
+</div></main></div></body></html>

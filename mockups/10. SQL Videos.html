@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_dashboard" name="shell-type"/>
+<title>DATA247 - My Learning</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#dce1ff",
+            "on-primary": "#ffffff",
+            "secondary": "#0051d5",
+            "on-secondary-fixed-variant": "#003ea8",
+            "surface-container-high": "#e2e7ff",
+            "secondary-container": "#316bf3",
+            "surface-bright": "#faf8ff",
+            "inverse-on-surface": "#eef0ff",
+            "tertiary-container": "#004a31",
+            "outline": "#757682",
+            "outline-variant": "#c5c5d3",
+            "surface": "#faf8ff",
+            "inverse-surface": "#283044",
+            "inverse-primary": "#b6c4ff",
+            "surface-container": "#eaedff",
+            "on-surface-variant": "#444651",
+            "surface-variant": "#dae2fd",
+            "secondary-fixed-dim": "#b4c5ff",
+            "on-tertiary-fixed-variant": "#005236",
+            "on-secondary": "#ffffff",
+            "on-error-container": "#93000a",
+            "primary": "#00236f",
+            "tertiary": "#00311f",
+            "primary-container": "#1e3a8a",
+            "on-primary-fixed": "#00164e",
+            "surface-container-low": "#f2f3ff",
+            "on-primary-container": "#90a8ff",
+            "error": "#ba1a1a",
+            "background": "#faf8ff",
+            "surface-dim": "#d2d9f4",
+            "surface-container-highest": "#dae2fd",
+            "on-tertiary-container": "#27c38a",
+            "secondary-fixed": "#dbe1ff",
+            "on-background": "#131b2e",
+            "on-primary-fixed-variant": "#264191",
+            "surface-tint": "#4059aa",
+            "tertiary-fixed-dim": "#4edea3",
+            "on-tertiary-fixed": "#002113",
+            "on-secondary-fixed": "#00174b",
+            "on-error": "#ffffff",
+            "on-secondary-container": "#fefcff",
+            "error-container": "#ffdad6",
+            "tertiary-fixed": "#6ffbbe",
+            "primary-fixed-dim": "#b6c4ff",
+            "on-tertiary": "#ffffff",
+            "on-surface": "#131b2e"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter-tablet": "1rem",
+            "margin-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "margin-desktop": "2.5rem",
+            "space-lg": "1.5rem",
+            "margin-tablet": "1.5rem",
+            "margin": "2rem",
+            "gutter": "1.5rem",
+            "gutter-desktop": "1.5rem",
+            "space-2xl": "3rem",
+            "space-md": "1rem",
+            "space-xl": "2rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "display-lg": ["Plus Jakarta Sans"],
+            "label-lg": ["Inter"],
+            "display-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "code-md": ["JetBrains Mono"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "label-md": ["Inter"],
+            "body-lg": ["Inter"]
+          },
+          "fontSize": {
+            "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "700"}],
+            "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+            "display-md": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "headline-lg": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+            "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+            "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+            "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+            "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+            "code-md": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+            "headline-md": ["22px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+            "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased">
+<!-- Desktop Learner Sidebar -->
+<aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+<div class="flex flex-col flex-1">
+<div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant/20">
+<img alt="DATA247 Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XbZWjggA1IkamJ9JjBLsdSAN3lsRDrO5Z67Us49h_eIMDacIoAUYqnONesdTmaXmFnIK8mrYgyfdCmED0gF_HZxnc9ll2loIpsGFRNxC6_Z1cOBli_CtwpfL4LGVoELTh4El_p1WXOHbv-Xc19hwUZexD466TFkbsy1d9Jwtv-ZkYlYwnYow624zuP1i0KjEq-KSUfxGvgqRIJrBaxFxqOrjguCe9OvpfwurblIzXd2js_tRaypxKrnrI"/>
+<span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight">DATA247</span>
+</div>
+<div class="px-space-md pt-space-lg pb-space-sm">
+<span class="px-space-sm text-[10px] uppercase font-bold tracking-wider text-outline">Core Navigation</span>
+</div>
+<nav class="flex-1 px-space-sm space-y-space-xs">
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[20px]">space_dashboard</span>
+<span class="">Dashboard</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-surface-container text-primary font-semibold border-l-4 border-primary pl-[12px] transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[20px]">school</span>
+<span class="">Learning</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+<span class="">Practice</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[20px]">quiz</span>
+<span class="">Interview Prep</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[20px]">group</span>
+<span class="">Tutors</span>
+</a>
+</nav>
+</div>
+<div class="p-space-sm border-t border-outline-variant/20 bg-surface-container-lowest/60">
+<div class="px-space-sm py-space-xs">
+<span class="text-[10px] uppercase font-bold tracking-wider text-outline">Workspace</span>
+</div>
+<nav class="space-y-space-xs">
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span class="">Profile</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+<span class="">Settings</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined text-[18px]">help</span>
+<span class="">Help &amp; Support</span>
+</a>
+</nav>
+</div>
+</aside>
+<!-- Main Shell -->
+<div class="pl-64 flex flex-col min-h-screen">
+<!-- Top Header -->
+<header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/20 z-40 px-space-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.02)]">
+<div class="flex-1 max-w-xl">
+<div class="relative flex items-center w-full">
+<span class="material-symbols-outlined absolute left-space-md text-[20px] text-outline pointer-events-none">search</span>
+<input class="w-full h-10 pl-11 pr-space-md bg-surface-container-low border border-outline-variant/40 rounded-xl text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:border-secondary focus:bg-surface-container-lowest transition-all" placeholder="Search notes, lessons, interview questions..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<button aria-label="Notifications" class="relative p-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[22px]">notifications</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span>
+</button>
+<div class="h-6 w-px bg-outline-variant/40"></div>
+<div class="flex items-center gap-space-sm cursor-pointer select-none">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Alex Morgan</span>
+<span class="font-body-sm text-[11px] leading-tight text-on-surface-variant">Data Analytics Student</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Page Content Container -->
+<main class="relative w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Video Playback Modal Overlay (Hidden by Default) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-200" id="videoModal">
+<div class="relative w-full max-w-4xl mx-space-md bg-surface-container-lowest rounded-xl shadow-2xl overflow-hidden flex flex-col scale-95 transition-transform duration-200" id="videoModalContent">
+<div class="flex items-center justify-between px-space-xl py-space-md bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">play_circle</span>
+<span class="font-headline-sm text-headline-sm text-primary tracking-tight" id="modalVideoTitle">Lecture</span>
+</div>
+<button class="p-space-xs rounded-lg text-outline hover:bg-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" onclick="closeLectureModal()">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<div class="relative w-full aspect-video bg-on-background flex flex-col items-center justify-center group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40" data-alt="High-resolution technical classroom screencast recording showcasing advanced relational database schemas, standard SQL queries, dark mode code terminal interface, and data architecture diagrams in sleek DATA247 navy blue aesthetic." id="modalVideoPoster" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGvef7VuMlNRaQJ8dbCc0uinkuaeZ6TcVK3X8yF25HpWK9tk7xSZ8a7_OUIszSXYY5jsOyl9Hsk4Or5jK6YLuAQgBSsFWJ7Tn5IU_JA0sm29V5F6HYE0vCJy-qO8vyPjBoxTJaKPU6Si0Og42kqJKkDJFd2q_sfsqdU_sthe8F2aZlqiS_ox3pPDJX6oliWK6r0mFsqQ3rWotXBKHzu3JWklrbSAGdWK73IEN8Q_xBJgGxRE06NPaQ"/>
+<div class="relative z-10 flex flex-col items-center gap-space-md text-center px-space-lg">
+<div class="w-16 h-16 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-105 cursor-pointer">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<p class="font-code-md text-code-md text-inverse-on-surface tracking-wide">Ready to stream • 1080p HD Studio Master</p>
+</div>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-on-background/90 via-on-background/40 to-transparent p-space-md flex items-center justify-between text-inverse-on-surface">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-[20px] cursor-pointer hover:text-secondary-fixed">play_arrow</span>
+<span class="material-symbols-outlined text-[20px] cursor-pointer hover:text-secondary-fixed">volume_up</span>
+<span class="font-code-md text-body-sm" id="modalVideoTime">00:00 / 25:00</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm bg-surface-container-lowest/20 px-space-xs py-0.5 rounded-lg">1.0x</span>
+<span class="material-symbols-outlined text-[20px] cursor-pointer hover:text-secondary-fixed">fullscreen</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-6xl w-full mx-auto px-space-lg lg:px-margin-desktop py-space-xl space-y-space-xl">
+<!-- Breadcrumb & Back Navigation -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<nav aria-label="Breadcrumb" class="flex items-center flex-wrap gap-space-xs font-label-md text-label-md text-outline">
+<a class="hover:text-primary transition-colors" href="#">My Learning</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Data Analytics</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Video Lectures</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-semibold text-primary">SQL</span>
+</nav>
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-secondary transition-colors self-start sm:self-auto py-space-xs px-space-sm rounded-lg hover:bg-surface-container-low" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Learning</span>
+</a>
+</div>
+<!-- Header Section -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm space-y-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-lg">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-7 bg-primary rounded-full"></div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">SQL — Video Lectures</h1>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant pl-space-md">
+            Recorded SQL lectures.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-low text-primary px-space-md py-space-sm rounded-full">
+<span class="material-symbols-outlined text-[18px] text-secondary">videocam</span>
+<span class="font-label-lg text-label-lg font-semibold">4 Recorded Lectures</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Video Resource List -->
+<div class="space-y-space-md">
+<div class="px-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Curriculum Syllabus Recordings</span>
+<span class="font-code-md text-body-sm text-outline">Total Run Time: 2h 00m</span>
+</div>
+<!-- Video Row 1 -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm hover:shadow-md transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-lg min-w-0">
+<div class="relative w-36 sm:w-44 aspect-video rounded-lg overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="A clean modern code editor with structured relational database queries showing SELECT, FROM, WHERE clauses in vivid syntax highlighting against an elegant slate navy backdrop, captured in 16:9 composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjDrtazQn3JQ8qsEEltpaAKDFgRWtGxj4pM0G_tObAnI9OfnToImO1UEgt631iZv0OK3tZk2e41vJwQdk68r6mNXZ0NJkRgovLbdXUfAw5hxZw7zzzmayXGi5LwGPdmTtXbmP_XIBzJd_KzPPSswGT2XL9v3L-vVQ0IfSdFz2ZCUwYKtN_oD-LCyRUSZth5-f7qmYyG0NQWHyzVLqeCB9FbxYeT7DUM8h0js1wobDPA2wtQPRp1otS"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-1.5 right-1.5 bg-inverse-surface/85 text-inverse-on-surface font-code-md text-label-sm px-1.5 py-0.5 rounded-sm">
+              25 min
+            </span>
+</div>
+<div class="flex flex-col min-w-0 space-y-space-xs">
+<span class="font-code-md text-label-sm text-outline">LECTURE 01</span>
+<h2 class="font-headline-sm text-headline-sm text-primary truncate group-hover:text-secondary transition-colors">
+              SQL Fundamentals
+            </h2>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+<span>25 min</span>
+<span class="text-outline-variant">•</span>
+<span class="text-outline">RDBMS basics, syntax grammar &amp; execution order</span>
+</div>
+</div>
+</div>
+<div class="flex-shrink-0 self-end sm:self-center">
+<button class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg px-space-lg py-space-sm rounded-lg transition-colors shadow-sm" onclick="openLectureModal('SQL Fundamentals', '25 min')">
+<span>Watch Lecture</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Video Row 2 -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm hover:shadow-md transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-lg min-w-0">
+<div class="relative w-36 sm:w-44 aspect-video rounded-lg overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Technical workspace screen showing SQL relational filter logic, tabular datasets with highlighted numeric rows and categorical sorting operations on a data analyst dashboard display." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuszzUz7vBapvKp3XQwlF8JR5khK7t0zywtWDvFZu3VySdxLphwKAFCtfH9cuFMuQXM4yz1H5XmOpb-itwjEcEar5kLtR6Aj2YHgA6HdVg95HhOZMjuvUmksMMK7y3HOR_1JpDfco-AyFgEXeR5AQJHNIL6dLKZXzP-3-YY9rmr3BlpTN2fVUKDklF9Xe5DIK9kUZ6kQ-lvZFWPkQsx3dJNTmrmly8A4XihLP4PsmlqF89kW1xDhuB"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-1.5 right-1.5 bg-inverse-surface/85 text-inverse-on-surface font-code-md text-label-sm px-1.5 py-0.5 rounded-sm">
+              32 min
+            </span>
+</div>
+<div class="flex flex-col min-w-0 space-y-space-xs">
+<span class="font-code-md text-label-sm text-outline">LECTURE 02</span>
+<h2 class="font-headline-sm text-headline-sm text-primary truncate group-hover:text-secondary transition-colors">
+              Filtering &amp; Sorting
+            </h2>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+<span>32 min</span>
+<span class="text-outline-variant">•</span>
+<span class="text-outline">WHERE, LIKE, IN, BETWEEN &amp; multi-column ORDER BY</span>
+</div>
+</div>
+</div>
+<div class="flex-shrink-0 self-end sm:self-center">
+<button class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg px-space-lg py-space-sm rounded-lg transition-colors shadow-sm" onclick="openLectureModal('Filtering &amp; Sorting', '32 min')">
+<span>Watch Lecture</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Video Row 3 -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm hover:shadow-md transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-lg min-w-0">
+<div class="relative w-36 sm:w-44 aspect-video rounded-lg overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Data aggregation matrix on a high contrast screen showing SQL COUNT, SUM, AVG and GROUP BY statistical summaries visualized cleanly beside a dataset table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMzySWF2_a9uFe-eQZLw44qWF8-mrgeSfX3EBys65gX4bdRXvZAY5jA7Zq245qUIhlMV11uGZxp8MjAAj4oGHHl1Lb9ir5k4UoXUJhaJrPhsBGxv50tviL_0FBgBwJZVLFjLVzcOYKeF7z2xk8L_zfS1rPdI4_j4_Eif4AWPLftIlf5kDkoYfZd0fI0qvVBXg6XgN_gVVvz0GyQHg2ioofMKSNIS6dmCQCs2Lwdn5AOTJ5CgaU680c"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-1.5 right-1.5 bg-inverse-surface/85 text-inverse-on-surface font-code-md text-label-sm px-1.5 py-0.5 rounded-sm">
+              28 min
+            </span>
+</div>
+<div class="flex flex-col min-w-0 space-y-space-xs">
+<span class="font-code-md text-label-sm text-outline">LECTURE 03</span>
+<h2 class="font-headline-sm text-headline-sm text-primary truncate group-hover:text-secondary transition-colors">
+              Aggregations &amp; GROUP BY
+            </h2>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+<span>28 min</span>
+<span class="text-outline-variant">•</span>
+<span class="text-outline">COUNT, SUM, AVG, MIN, MAX and HAVING conditions</span>
+</div>
+</div>
+</div>
+<div class="flex-shrink-0 self-end sm:self-center">
+<button class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg px-space-lg py-space-sm rounded-lg transition-colors shadow-sm" onclick="openLectureModal('Aggregations &amp; GROUP BY', '28 min')">
+<span>Watch Lecture</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Video Row 4 -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm hover:shadow-md transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-lg min-w-0">
+<div class="relative w-36 sm:w-44 aspect-video rounded-lg overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Venn diagrams and relational entity relationship mapping demonstrating INNER JOIN, LEFT JOIN, and nested subquery architectures in modern enterprise analytics software." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaCPjVQDDEWrEdfuZzTsO8z8nbjzSmyH3Yrld1bX_OUMxMsHVeNSsFv9en-RvJTtil7ReSHVC36miwcCEmD-2caNdB_ZbmpVQZcAAklTe3n9b6TGbIQOEqGbOK8cRfDzSPoeIErKSg9xi79VPKBN5qwJydt_EQ5Urmpghu9aA7Q1Z2otH48gkwm0bPxH8ST84rDX2mhV8xZpNM9xR_rcGxDq5r1LPdh7hkSINMT2dn7pcCI_gLGQVs"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-1.5 right-1.5 bg-inverse-surface/85 text-inverse-on-surface font-code-md text-label-sm px-1.5 py-0.5 rounded-sm">
+              35 min
+            </span>
+</div>
+<div class="flex flex-col min-w-0 space-y-space-xs">
+<span class="font-code-md text-label-sm text-outline">LECTURE 04</span>
+<h2 class="font-headline-sm text-headline-sm text-primary truncate group-hover:text-secondary transition-colors">
+              Joins &amp; Subqueries
+            </h2>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+<span>35 min</span>
+<span class="text-outline-variant">•</span>
+<span class="text-outline">INNER, LEFT, FULL OUTER joins &amp; correlated subqueries</span>
+</div>
+</div>
+</div>
+<div class="flex-shrink-0 self-end sm:self-center">
+<button class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg px-space-lg py-space-sm rounded-lg transition-colors shadow-sm" onclick="openLectureModal('Joins &amp; Subqueries', '35 min')">
+<span>Watch Lecture</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function openLectureModal(title, duration) {
+    const modal = document.getElementById('videoModal');
+    const content = document.getElementById('videoModalContent');
+    const titleEl = document.getElementById('modalVideoTitle');
+    const timeEl = document.getElementById('modalVideoTime');
+
+    if (titleEl) titleEl.textContent = title;
+    if (timeEl) timeEl.textContent = '00:00 / ' + duration;
+
+    if (modal && content) {
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100', 'pointer-events-auto');
+      content.classList.remove('scale-95');
+      content.classList.add('scale-100');
+    }
+  }
+
+  function closeLectureModal() {
+    const modal = document.getElementById('videoModal');
+    const content = document.getElementById('videoModalContent');
+
+    if (modal && content) {
+      modal.classList.remove('opacity-100', 'pointer-events-auto');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      content.classList.remove('scale-100');
+      content.classList.add('scale-95');
+    }
+  }
+
+  // Close modal if user clicks outside content card
+  document.getElementById('videoModal')?.addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeLectureModal();
+    }
+  });
+
+  // ESC key closes modal
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeLectureModal();
+    }
+  });
+</script></main>
+</div>
+<!-- Interactive Hierarchy & Tabs State Switcher Script -->
+<script>
+    function switchHierarchyView(viewId) {
+      const views = ['view-subjects', 'view-sql-modules', 'view-module-inner'];
+      views.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add('hidden');
+      });
+
+      const activeEl = document.getElementById(viewId);
+      if (activeEl) {
+        activeEl.classList.remove('hidden');
+      }
+
+      // Update top demo buttons
+      const btn1 = document.getElementById('nav-view-1');
+      const btn2 = document.getElementById('nav-view-2');
+      const btn3 = document.getElementById('nav-view-3');
+
+      [btn1, btn2, btn3].forEach(btn => {
+        if (!btn) return;
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-transparent', 'text-on-surface-variant');
+      });
+
+      if (viewId === 'view-subjects' && btn1) {
+        btn1.classList.add('bg-primary', 'text-on-primary');
+        btn1.classList.remove('bg-transparent', 'text-on-surface-variant');
+      } else if (viewId === 'view-sql-modules' && btn2) {
+        btn2.classList.add('bg-primary', 'text-on-primary');
+        btn2.classList.remove('bg-transparent', 'text-on-surface-variant');
+      } else if (viewId === 'view-module-inner' && btn3) {
+        btn3.classList.add('bg-primary', 'text-on-primary');
+        btn3.classList.remove('bg-transparent', 'text-on-surface-variant');
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function switchModuleTab(tabName) {
+      const tabNotes = document.getElementById('module-tab-notes');
+      const tabVideos = document.getElementById('module-tab-videos');
+      const btnNotes = document.getElementById('tab-btn-notes');
+      const btnVideos = document.getElementById('tab-btn-videos');
+
+      if (tabName === 'notes') {
+        tabNotes.classList.remove('hidden');
+        tabVideos.classList.add('hidden');
+        btnNotes.classList.add('border-primary', 'text-primary');
+        btnNotes.classList.remove('border-transparent', 'text-outline');
+        btnVideos.classList.add('border-transparent', 'text-outline');
+        btnVideos.classList.remove('border-primary', 'text-primary');
+      } else {
+        tabVideos.classList.remove('hidden');
+        tabNotes.classList.add('hidden');
+        btnVideos.classList.add('border-primary', 'text-primary');
+        btnVideos.classList.remove('border-transparent', 'text-outline');
+        btnNotes.classList.add('border-transparent', 'text-outline');
+        btnNotes.classList.remove('border-primary', 'text-primary');
+      }
+    }
+
+    function switchNotesLang(lang) {
+      const enContent = document.getElementById('notes-content-en');
+      const hinglishContent = document.getElementById('notes-content-hinglish');
+      const subEn = document.getElementById('subtab-en');
+      const subHinglish = document.getElementById('subtab-hinglish');
+
+      if (lang === 'en') {
+        enContent.classList.remove('hidden');
+        hinglishContent.classList.add('hidden');
+        subEn.classList.add('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+        subEn.classList.remove('text-on-surface-variant', 'font-medium');
+        subHinglish.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+        subHinglish.classList.add('text-on-surface-variant', 'font-medium');
+      } else {
+        hinglishContent.classList.remove('hidden');
+        enContent.classList.add('hidden');
+        subHinglish.classList.add('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+        subHinglish.classList.remove('text-on-surface-variant', 'font-medium');
+        subEn.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+        subEn.classList.add('text-on-surface-variant', 'font-medium');
+      }
+    }
+  </script>
+</body></html>

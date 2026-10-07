@@ -1,5 +1,5 @@
 import './globals.css'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { ReactNode } from 'react'
 
 export const metadata: Metadata = {
@@ -8,13 +8,14 @@ export const metadata: Metadata = {
     template: '%s | Your App Name',
   },
   description: 'Your App description goes here.',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
   metadataBase: new URL('https://yourdomain.com'),
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 }
 
 export default function RootLayout({
